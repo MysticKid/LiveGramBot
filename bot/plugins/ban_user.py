@@ -64,7 +64,7 @@ async def ban_command(client: Client, message: Message):
             disable_web_page_preview=True,
             reply_markup=message.reply_markup,
             disable_notification=True,
-            reply_to_message_id=reply_message_id
+            #reply_to_message_id=reply_message_id
         )
     except UserIsBlocked:
         await message.reply_text(
